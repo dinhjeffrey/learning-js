@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  	"start": "node ."
+    "start": "node ."
   },
   "repository": {
     "url": "https://github.com/dinhjeffrey/learning-js.git",
     "type": "git"
   },
   "author": "Jeffrey Dinh <dinhjeffreyy@gmail.com> (http://dindledoo.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
