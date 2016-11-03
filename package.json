@@ -9,7 +9,10 @@
     "extends": "airbnb",
     "plugin": [
       "import"
-    ]
+    ],
+    "env": {
+      "browser": true
+    }
   },
   "babel": {
     "presets": [
@@ -23,8 +26,11 @@
   },
   "author": "Jeffrey Dinh <dinhjeffreyy@gmail.com> (http://dindledoo.com/)",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
   "devDependencies": {
+    "babel-loader": "^6.2.7",
     "babel-preset-flow": "^1.0.0",
     "babel-preset-latest": "^6.16.0",
     "del": "^2.2.2",
@@ -36,6 +42,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^3.0.1",
-    "gulp-flowtype": "^1.0.0"
+    "gulp-flowtype": "^1.0.0",
+    "webpack-stream": "^3.2.0"
   }
 }
