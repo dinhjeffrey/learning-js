@@ -17,7 +17,7 @@
   "babel": {
     "presets": [
       "latest",
-      "flow"
+      "react"
     ]
   },
   "repository": {
@@ -27,12 +27,17 @@
   "author": "Jeffrey Dinh <dinhjeffreyy@gmail.com> (http://dindledoo.com/)",
   "license": "MIT",
   "dependencies": {
-    "babel-polyfill": "^6.16.0"
+    "babel-polyfill": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-loader": "^6.2.7",
     "babel-preset-flow": "^1.0.0",
     "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "del": "^2.2.2",
     "eslint": "^3.9.0",
     "eslint-config-airbnb": "^12.0.0",

@@ -2,8 +2,8 @@
 
 import gulp from 'gulp';
 import babel from 'gulp-babel';
-import del from 'del';
 import eslint from 'gulp-eslint';
+import del from 'del';
 import webpack from 'webpack-stream';
 import webpackConfig from './webpack.config.babel';
 
@@ -11,7 +11,7 @@ const paths = {
   allSrcJs: 'src/**/*.js?(x)',
   serverSrcJs: 'src/server/**/*.js?(x)',
   sharedSrcJs: 'src/shared/**/*.js?(x)',
-  clientEntryPoint: 'src/client/app.js',
+  clientEntryPoint: 'src/client/app.jsx',
   clientBundle: 'dist/client-bundle.js?(.map)',
   gulpFile: 'gulpfile.babel.js',
   webpackFile: 'webpack.config.babel.js',
@@ -52,4 +52,3 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['watch', 'main']);
-
