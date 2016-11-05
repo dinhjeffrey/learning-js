@@ -7,7 +7,8 @@
     "test": "gulp test"
   },
   "eslintConfig": {
-    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "extends": ["airbnb", "flowtype"],
     "plugin": [
       "import"
     ],
@@ -29,7 +30,8 @@
   "babel": {
     "presets": [
       "latest",
-      "react"
+      "react",
+      "flow"
     ]
   },
   "repository": {
@@ -49,6 +51,7 @@
     "redux-immutable": "^3.0.8"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.7",
     "babel-preset-flow": "^1.0.0",
     "babel-preset-latest": "^6.16.0",
@@ -57,6 +60,7 @@
     "del": "^2.2.2",
     "eslint": "^3.9.0",
     "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
